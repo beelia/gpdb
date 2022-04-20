@@ -938,7 +938,7 @@ Date(System.currentTimeMillis()));</codeblock>
       <p>When writing the PL/Java, mapping the JVM into the same process-space as the Greenplum
         Database backend code, some concerns have been raised regarding multiple threads, exception
         handling, and memory management. Here are brief descriptions explaining how these issues
-        where resolved.</p>
+        were resolved.</p>
       <ul>
         <li id="pv165334">
           <xref href="#topic34" type="topic" format="dita"/>
