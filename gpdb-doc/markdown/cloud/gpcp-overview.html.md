@@ -25,9 +25,7 @@ Greenplum Cloud Platform supports the three public cloud platforms through licen
 ### <a id="BYOL"></a>Bring Your Own License (BYOL)
 
 -  [AWS BYOL listing](https://aws.amazon.com/marketplace/pp/prodview-piiukzn26stas)
-
 -  [Azure BYOL listing](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/pivotal.pivotal-greenplum-azure-byol?tab=Overview)
-
 -  [GCP BYOL listing](https://console.cloud.google.com/marketplace/product/pivotal-public/pivotal-greenplum-byol?project=pivotal-public)
 
 ### <a id="Hourly usage"></a>Pay-as-you-go (PAYG / Hourly / metered)
@@ -44,11 +42,9 @@ Greenplum Cloud Platform supports the three public cloud platforms through licen
 
 The development team created the documentation for each public cloud platform. Before each full or soft release, they edited the original Microsoft Word documents, saved PDFs, and uploaded them into each public cloud platform's object storage (S3 for AWS, Blob Storage for Azure, and Google Cloud Storage for GCP). 
 
-They planned a consistent user experience for documentation by locating it under VMware docs and linking to the landing pages of each listing on the public clouds, which contain information on the  the BYOL and PAYG listings, and the custom and non-marketplace deployments. 
+They planned a consistent user experience for documentation by locating it under VMware docs and linking to the landing pages of each listing on the public clouds. Those pages would contain information on the BYOL and PAYG listings, as well as the custom and non-marketplace deployments. 
 
-### <a id="PDF_docs"></a> Greenplum Cloud Platform PDF Documentation
-
-The original source documents are is in Microsoft Word. (The documntation team needs a link)
+### <a id="PDF_docs"></a> Greenplum Cloud Platform Customer Documentation (PDFs)
 
 #### <a id="AWS PDFs"></a>Amazon Web Services PDFs
 
@@ -70,9 +66,9 @@ The original source documents are is in Microsoft Word. (The documntation team n
 
 [Release Notes](https://storage.cloud.google.com/vmware-tanzu-docs/VMware%20Tanzu%20Greenplum%20on%20GCP%20Marketplace%20Release%20Notes%20v6.5.1.pdf?_ga=2.103586560.-1634467729.1653031118&_gac=1.220981994.1656485649.CjwKCAjwzeqVBhAoEiwAOrEmzbZvtpG98ZAd1OLxRSYxxLXAhUAF8B1gv8PIYDQtGEza88xaC_N8gRoCl3sQAvD_BwE)
 
-### <a id="Word_docs"></a> Greenplum Cloud Platform Microsoft Word Source Documentation
+### <a id="Word_docs"></a> Greenplum Cloud Platform Source Documentation (Microsoft Word)
 
-#### <a id="AWS Word Docs"></a>Amazon Web Services Word Documents
+#### <a id="AWS Word Docs"></a>Amazon Web Services Source Documents
 
 [Overview](https://onevmw.sharepoint.com/:w:/r/teams/tanzudataservices/Shared%20Documents/Tanzu%20[…]x?d=wda432acb0b3b4cc5805d81b1e43796c4&csf=1&web=1&e=LcTEsD)
 
@@ -80,15 +76,13 @@ The original source documents are is in Microsoft Word. (The documntation team n
 
 [Troubleshooting Guide](https://onevmw.sharepoint.com/:w:/r/teams/tanzudataservices/Shared%20Documents/Tanzu%20[…]x?d=w6f3e8ccabea947d6a9694cb775e4dd28&csf=1&web=1&e=mNkOwt)
 
-#### <a id="Azure Word Docs"></a>Azure Word Documents
-
-Azure
+#### <a id="Azure Word Docs"></a>Azure Source Documents
 
 [Overview](https://onevmw.sharepoint.com/:w:/r/teams/tanzudataservices/Shared%20Documents/Tanzu%20[…]x?d=wdfef2bed99224816ad4f1fee5dfe29e2&csf=1&web=1&e=KVOduW)
 
 [Release Notes](https://onevmw.sharepoint.com/:w:/r/teams/tanzudataservices/Shared%20Documents/Tanzu%20[…]x?d=w5587740ab17f4a21a1da1ccc250bc135&csf=1&web=1&e=UGHVrn)
 
-#### <a id="GCP Word Docs"></a>Google Cloud Platform Word Documents
+#### <a id="GCP Word Docs"></a>Google Cloud Platform Source Documents
 
 [Overview](https://onevmw.sharepoint.com/:w:/r/teams/tanzudataservices/Shared%20Documents/Tanzu%20[…]x?d=w553e0504f6064b4fba8f2c4e128afaf4&csf=1&web=1&e=tcVaiT)
 
@@ -98,7 +92,7 @@ Azure
 
 Each of the three public cloud platforms has a version that is different from the current Greenplum data warehouse version.
 
-|Public Cloud Platform | Version |
+|Public Cloud Platform | Greenplum Cloud Platform Version |
 |------|---------------|
 |Greenplum Cloud Platform on AWS|6.7.0|
 |Greenplum Cloud Platform on Azure|6.6.0|
@@ -110,7 +104,7 @@ There are two types of release for Greenplum Cloud Platform.
 
 ### Soft Release
 
-The soft release includes the latest Greenplum Server version, the latest compatible Greenplum optional components, and the cloud utility upgrades / patches without undergoing an approval process by the public cloud provider. 
+The soft release includes the latest Greenplum Server version, the latest compatible Greenplum optional components, and the cloud utility upgrades / patches. There is no need to undergo an approval process by the public cloud provider. 
 
 The soft release is made available to customers by using the `gprelease` command, and will not be available as a separate image in the cloud marketplace. 
 
@@ -120,11 +114,11 @@ For external soft releases, the version of Greenplum Cloud Platform is not incre
 
 The full release includes the latest Greenplum Server version, the latest compatible Greenplum optional components, and cloud utility upgrades/patches. 
 
-The full release undergoes a rigorous approval process by the public cloud provider before being made available to customers on the marketplace. It is targeted only if there is a change required on the deployment template (or) on the virtual image. 
+Unlike the soft release, the full release requires a rigorous approval process by the public cloud provider before being made available to customers on the marketplace. It is targeted only if there is a change required on the deployment template, or on the virtual image. 
 
 For external full releases, the version of Greenplum Cloud Platform is incremented in the release notes. 
 
-NOTE: Greenplum on Cloud does not currently have any release cadence, but a full release is planned for every quarter.
+NOTE: Greenplum Cloud Platform does not currently have any release cadence, but a full release is planned for every quarter.
 
 ### Estimations
 
